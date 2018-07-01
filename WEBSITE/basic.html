@@ -1,0 +1,79 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="basic.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="somaiya">
+        <img src="sonaiya.jpg" height="140" width="140">
+    </div>
+    <div id="logo">
+        <img src="logo.png" height="140" width="140">
+    </div>
+    <div id="dropdown">
+        <ul>
+            <li> home </li>
+                
+            <li>NON TECHNICAL
+             <ul>
+                    <li>GENERAL</li>
+                    <li>PLACEMNET</li>
+                    <li>ACHIEVEMENTS</li>
+                    <li>ART SECTION</li>
+             </ul>    
+            </li>  
+
+            <li>TECHNICAL
+                    <ul>
+                           <li>VIDEOS</li>
+                           <li>ARTICLES</li>
+                           <li>INTERVIEWS</li>
+                           <li>NEW TECH</li>
+                    </ul>    
+            </li> 
+               
+        </ul>
+    </div>
+    <div id="container">
+        <img src="1.jpg" class="slides" >
+        <img src="2.jpg" class="slides" >
+        <img src="3.jpg" class="slides" >
+        <img src="4.jpg" class="slides" >
+        <img src="5.jpg" class="slides" >
+        <button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094</button>
+        <button class="btn" onclick="plusIndex(-1)" id="btn2">&#10095</button>
+
+
+    </div>
+
+</body>
+<script>
+    var index=1;
+    showimage(1);
+    function plusIndex(n)
+    {
+        index = index + 1;
+        showimage(index) ;
+    }
+    function showimage(n){
+        var i;
+        var x = document.getElementsByClassName("slides") ;  
+        if(n>x.length){index = 1};
+        if(n<1){index = x.length};
+        
+        for(i=0;i<x.length;i++)
+        {
+            x[i].style.display = "none";
+
+
+        }
+        x[index-1].style.display = "block";
+
+         }
+</script>
+</html>

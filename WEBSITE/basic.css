@@ -67,3 +67,71 @@ box-shadow: 10px 0px 20px 10px black;
     position: relative;
     float: right;
 }
+#op{
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    
+}
+#op ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    
+}
+
+
+
+
+#op li a {
+    display: block;
+    color: white;
+    
+    padding: 16px;
+    text-decoration: none;
+}
+
+#op li a:hover {
+    background-color: #111111;
+    width: 35px;
+}
+.video{
+    position: absolute;
+    top: 250px;
+    left: 150px;
+}
+#footer{
+    position: absolute;
+    bottom: 0px;
+    z-index:2;
+    width: 1200px;
+}
+
+#footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+   
+}
+
+#footer li {
+    float: left;
+}
+
+#footer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 120px;
+    text-decoration: none;
+    
+}
+
+#footerli a:hover {
+    background-color: #111111;
+}

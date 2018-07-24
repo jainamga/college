@@ -135,3 +135,81 @@ box-shadow: 10px 0px 20px 10px black;
 #footerli a:hover {
     background-color: #111111;
 }
+.arti {
+    position: absolute;
+    top: 290px;
+    left: 120px;
+    border: 1px solid #ccc;
+    height: 250px;
+    width: 200px;
+    border-radius: 15px ;  
+  }
+  
+  .arti > ul
+  {
+    display: flex;
+    flex-flow: column wrap;
+    height: inherit;
+    width: inherit;
+    margin:0;
+    background-color: rgb(236, 232, 232)
+    
+  }
+  
+  .arti > ul > li
+  {
+    flex: 0 0 auto;
+  }
+
+  .arti2 {
+    position: absolute;
+    top: 290px;
+    left: 420px;
+    border: 1px solid #ccc;
+    height: 250px;
+    width: 200px;
+    border-radius: 15px ;  
+  }
+  
+  .arti2 > ul
+  {
+    display: flex;
+    flex-flow: column wrap;
+    height: inherit;
+    width: inherit;
+    margin:0;
+    background-color: rgb(236, 232, 232)
+    
+  }
+  
+  .arti2 > ul > li
+  {
+    flex: 0 0 auto;
+  }
+   .arti3 {
+    position: absolute;
+    top: 290px;
+    left: 720px;
+    border: 1px solid #ccc;
+    height: 250px;
+    width: 200px;
+    border-radius: 15px ;  
+  }
+  
+  .arti3> ul
+  {
+    display: flex;
+    flex-flow: column wrap;
+    height: inherit;
+    width: inherit;
+    margin:0;
+    background-color: rgb(236, 232, 232)
+    
+  }
+  
+  .arti3 > ul > li
+  {
+    flex: 0 0 auto;
+  }
+ 
+  

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/basic.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/Navbar.css"  />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div id="somaiya">
+        <img src="../img/sonaiya.jpg" height="140" width="140">
+    </div>
+    <div id="logo">
+        <img src="../img/logo.jpg" height="140" width="200"><!--Changed logo-->
+    </div>
+
+    <!--Navigation bar-->
+    <div class="container">
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Technical
+                </button>
+                <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Non-Technical
+                </button>
+                <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <!--
+    <div class="w3-sidebar w3-green w3-bar-block" style="width:15%">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>-->
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul class="sidebarContent">
+            <li><a href="basic.html">Item1</a></li>
+            <li><a href="articles.html">Item1</a></li>
+            <li><a href="videos.html">Item1</a></li>
+            <li><a href="parallax2.html">Item1</a></li>
+        </ul>
+    </div>
+    
+    <!--Footer-->
+    <div id="footer">
+        <ul >
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+    <!-- Changes made to the photo viewer-->   
+    <div id="container">
+        <img src="robo.jpg" class="slides" >
+        <img src="robo2.jpg" class="slides" >
+        <img src="robo3.jpg" class="slides" >
+        <img src="robo4.jpg" class="slides" >
+        
+        <button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094</button>
+        <button class="btn" onclick="plusIndex(-1)" id="btn2">&#10095</button>
+    </div>
+    </body>
+    <div class="rank">
+        <ol>RANKS
+        <li>2018 3rd </li>
+        <li>2017 9th</li>
+        <li>2016 56th</li>
+        <li>2015 12th</li>
+        </ol>
+
+    </div>   
+<script>
+    var index=1;
+    showimage(1);
+    function plusIndex(n)
+    {
+        index = index + 1;
+        showimage(index) ;
+    }
+    function showimage(n){
+        var i;
+        var x = document.getElementsByClassName("slides") ;  
+        if(n>x.length){index = 1};
+        if(n<1){index = x.length};
+        
+        for(i=0;i<x.length;i++)
+        {
+            x[i].style.display = "none";
+
+
+        }
+        x[index-1].style.display = "block";
+
+         }
+</script>
+</html>

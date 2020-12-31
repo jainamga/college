@@ -153,33 +153,3 @@ box-shadow: 10px 0px 20px 10px black;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
-.rank{
-    position: absolute;
-    top: 710px;
-    left: 440px;
-    z-index:9; 
-}
-
-.rank ol {
-   
-    background: #ff9999;
-    padding: 20px;
-   
-}
-
-.rank ul {
-    background: #3399ff;
-    padding: 20px;
-}
-
-.rank ol li {
-    float: left;
-    background: #ffe5e5;
-    padding: 5px;
-    margin-left: 35px;
-}
-
-.rank ul li {
-    background: #cce5ff;
-    margin: 5px;
-}

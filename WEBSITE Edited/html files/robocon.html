@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Robocon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css files/basic.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css files/Navbar.css"  />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div id="somaiya">
+        <img src="../images/sonaiya.jpg" height="140" width="140">
+    </div>
+    <div id="logo">
+        <img src="../images/logo.jpg" height="140" width="200"><!--Changed logo-->
+    </div>
+
+   <!--Navigation bar-->
+    <div class="container">
+        <div class="navbar">
+            
+			<div class="dropdown">
+                <button class="dropbtn">Achievements
+                </button>
+                <div class="dropdown-content">
+                <a href="NSS photo.html">NSS</a>
+                <a href="robocon.html">ROBOCON</a>
+                <a href="Placements.html">PLACEMENTS</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Blog
+                </button>
+                <div class="dropdown-content">
+                <a href="techArticle.html">Let's go Technical</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Thought Bubble
+                </button>
+                <div class="dropdown-content">
+                <a href="articles.html">Thought Bubble</a>
+                <a href="#">Learning</a>
+                <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+   <!--Footer-->
+    <div id="footer">
+        <ul >
+                <li><a href="home.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact page.html">Contact</a></li>
+                
+        </ul>
+    </div>
+    <!-- Changes made to the photo viewer-->   
+    <div id="container">
+        <img src="../images/robo.jpg" class="slides" >
+        <img src="../images/robo2.jpg" class="slides" >
+        <img src="../images/robo3.jpg" class="slides" >
+        <img src="../images/robo4.jpg" class="slides" >
+        
+        <button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094</button>
+        <button class="btn" onclick="plusIndex(-1)" id="btn2">&#10095</button>
+    </div>
+    </body>
+    <div class="rank">
+        <ol>RANKS
+        <li>2018 3rd </li>
+        <li>2017 9th</li>
+        <li>2016 56th</li>
+        <li>2015 12th</li>
+        </ol>
+
+    </div>   
+<script>
+    var index=1;
+    showimage(1);
+    function plusIndex(n)
+    {
+        index = index + 1;
+        showimage(index) ;
+    }
+    function showimage(n){
+        var i;
+        var x = document.getElementsByClassName("slides") ;  
+        if(n>x.length){index = 1};
+        if(n<1){index = x.length};
+        
+        for(i=0;i<x.length;i++)
+        {
+            x[i].style.display = "none";
+
+
+        }
+        x[index-1].style.display = "block";
+
+         }
+</script>
+</html>
